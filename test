@@ -4,11 +4,36 @@
 # If the letter is P, do the weighted average between the grades
 # With the weigh of 5,3 and 2, respectively
 
-n1 = float(input('Informe a primeira nota :'))
+import string
+
+
+n1 = float(input('Informe a primeira nota: '))
 n2 = float(input('Informe a segunda nota: '))
-n3 = float(input('informe a terceira nota:'))
-l1 = string(input('Digite A para receber uma media aritimetica \n digite P para receber uma media ponderada com os pesos de 5,3 e 2, respectivamente: '))
+n3 = float(input('informe a terceira nota: '))
 
 
+l1 = input('Digite "A" para receber uma media aritimetica \nDigite "P" para receber uma media ponderada \nCom os pesos de 5,3 e 2, respectivamente: ').lower()
+
+while l1 != 'a' or 'b':
+    if "a" in l1: 
+        average = (n1+n2+n3)/3
+        print('''
+        =====================================================================
+        A media entre aritimetica entre {:.1f} , {:.1f} e {:.1f} é {:.2f}
+        ====================================================================='''.format(n1,n2,n3,average))
+        exit()
+    if "p" in l1:
+        average = (n1*5+n2*3+n3*2)/10
+        print('''
+        ====================================================================
+        A media entre ponderada entre {:.1f} , {:.1f} e {:.1f} é {:.2f}
+        ===================================================================='''.format(n1,n2,n3,average))
+        exit()
+    else: 
+        print('''
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            Por favor, escolha entre as letras "A" e "P"!
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!''')
+        l1 = input('Digite "A" para receber uma media aritimetica \nDigite "P" para receber uma media ponderada \nCom os pesos de 5,3 e 2, respectivamente: ').lower()
 
 
