@@ -1,4 +1,4 @@
-# exercise 3  
+# Exercise 3  
 # Elaborate a code that recieve 3 grades from a student and a letter
 # If the letter is A, do the aritetic average between the grades
 # If the letter is P, do the weighted average between the grades

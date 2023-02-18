@@ -1,0 +1,29 @@
+# Exercise 4
+# Write a progam that recieves 2 numbers and realise the following operations with proceedings 
+# Print the greater number
+# Print the average of this 2 numbers
+
+n1 = int(input('Digite um número inteiro: '))
+n2 = int(input('Digite outro número inteiro: '))
+
+def PrintAverage(n1,n2):
+    average = float((n1+n2)/2)
+    print('A média entre os dois números é: {:.1f}'.format(average))
+def FindGreaterNumber(n1,n2):
+    if n1>n2:
+        print('O maior número entre os dois digitados é: {}'.format(n1))
+        PrintAverage(n1,n2)
+    if n2>n1:
+        print('O maior número entre os dois digitados é {}'.format(n2))
+        PrintAverage(n1,n2)
+    if n1==n2:
+        print('Ambos os números são iguais, portanto a média deles são eles mesmos ({})'.format(n1))
+
+
+
+FindGreaterNumber(n1,n2)
+
+
+
+
+
