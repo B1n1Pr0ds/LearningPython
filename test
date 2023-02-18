@@ -1,0 +1,14 @@
+# exercise 3  
+# Elaborate a code that recieve 3 grades from a student and a letter
+# If the letter is A, do the aritetic average between the grades
+# If the letter is P, do the weighted average between the grades
+# With the weigh of 5,3 and 2, respectively
+
+n1 = float(input('Informe a primeira nota :'))
+n2 = float(input('Informe a segunda nota: '))
+n3 = float(input('informe a terceira nota:'))
+l1 = string(input('Digite A para receber uma media aritimetica \n digite P para receber uma media ponderada com os pesos de 5,3 e 2, respectivamente: '))
+
+
+
+
