@@ -1,0 +1,19 @@
+# exercise 5
+# creeate a procedure thats make a header for a report.
+# This procedure needs to recieve a string parameter 
+
+import string
+def PrintHeader(name):
+    print('''
+    =============================================
+    Centro universitário Facens
+    Curso de Engenhari Mecatrônica
+    Disciplina de Complexidade de Algoritimos
+    Nome: {}
+    ============================================='''.format(name))
+
+
+name = input('Por favor, digite seu nome: ')
+PrintHeader(name)
+
+exit()
