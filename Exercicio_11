@@ -1,0 +1,11 @@
+# Exercise 11
+# Create a functions that converts pounds to centimeters, where pol is passed as a parameter and cm are returned
+# 1pol = 2,54cm
+# create a function in phyton that test such function
+
+def Convert(pol):
+    cm = pol*2.54
+    return cm
+
+pol = float(input('Digite a medida em polegadas: '))
+print('{} polegadas é igual a {} centímetros'.format(pol, Convert(pol)))
