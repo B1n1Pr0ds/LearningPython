@@ -1,0 +1,19 @@
+#exercise 8
+#create a procedure thats verify how much times a number x is divisible by a number y
+#write a program that tests such function too
+
+def DividesNumbers(x,y):
+    rest = x%y
+    if rest==0:
+        print('O numero de vezes que {:.1f} é divisivel por {:.1f} é {:.1f}'.format(x,y,x/y))
+    if rest>0:
+        print('O número de vezes que {} é divisível por {} é {:.0f}, porém há um resto na divisão com o valor de: {}'.format(x,y,x/y,rest))
+
+
+
+def RecieveNumbers():
+    n1 = float(input('Digite um número para ser dividido: '))
+    n2 = float(input('Digite um número para dividir: '))
+    DividesNumbers(n1,n2)
+
+RecieveNumbers()
