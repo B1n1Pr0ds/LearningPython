@@ -5,7 +5,7 @@
 def CalculatePercentual(oldprice,newprice):
     d1 = newprice - oldprice
     percentual = (100*d1)/oldprice
-    print('De acordo com os preços inseridos, a porcentagem de aumento é: {}%'.format(percentual))
+    print('De acordo com os preços inseridos, a porcentagem de diferença é: {}%'.format(percentual))
 
 n1 = float(input('Digite o preço antigo: '))
 n2 = float(input('Digite o novo preço: '))
