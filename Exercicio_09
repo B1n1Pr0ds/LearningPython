@@ -1,0 +1,13 @@
+# exercise 9
+# Do a python progam that reaads the old price from a product and the new one and calculate the percentual of rise of the product
+# make a procedure from this calculation
+
+def CalculatePercentual(oldprice,newprice):
+    d1 = newprice - oldprice
+    percentual = (100*d1)/oldprice
+    print('De acordo com os preços inseridos, a porcentagem de aumento é: {}%'.format(percentual))
+
+n1 = float(input('Digite o preço antigo: '))
+n2 = float(input('Digite o novo preço: '))
+CalculatePercentual(n1,n2)
+
