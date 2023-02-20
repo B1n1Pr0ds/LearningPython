@@ -1,0 +1,18 @@
+# execise 7
+# Do a python program that verify if a number its a pair or odd
+# The recieve and identification of the number must be a procedure
+
+def NumberIdentification(number):
+    rest = number%2
+    if rest>0:
+        print('O número é impar')
+    if rest==0:
+        print('O número é par')
+
+def AskForNumber():
+    n = int(input('Por favor, digite um número: '))
+    NumberIdentification(n)
+
+
+
+AskForNumber()
