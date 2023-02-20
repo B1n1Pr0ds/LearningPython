@@ -1,0 +1,29 @@
+# Exercise 10
+# Make a python program that reads an 10 element list
+# By next, determine the biggest value of the list
+# This value must be printed by a procedure
+
+
+
+
+
+def RecieveList():
+    ns = []
+    for x in range(10):
+        ns.append(float(input('Digite o {}º número: '.format(x+1))))
+    CompareList(ns)
+
+
+def CompareList(listn):
+    biggest = listn[0]
+    for y in listn:
+        if y>biggest:
+            biggest = y
+    PrintBiggest(biggest)
+
+def PrintBiggest(number):
+    print('O maior número da lista é: {}'.format(number))
+
+RecieveList()
+
+        
