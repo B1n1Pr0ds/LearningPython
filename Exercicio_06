@@ -1,0 +1,38 @@
+# Exercise 6
+# Write a python procedure that recieves a natural number and print the first 3 letter of a week day
+#"SAB" = 7
+# the procedure must show an error message if the number dont correspond a week day
+
+# the function must have a default argument that print "dom" if the function is called without a parameter
+
+# Create a python program that use that procedure, by calling it two times, before reading a parameter and not
+
+def WeekDay(number = 1):
+    day = '\nDom'
+    if(number==1):
+        day = '\nDom'
+    elif(number==2):
+        day = '\nSeg'
+    elif(number==3):
+        day = '\nTer'
+    elif(number==4):
+        day = '\nQua'
+    elif(number==5):
+        day = '\nQui'
+    elif(number==6):
+        day = '\nSex'
+    elif(number==7):
+        day = '\nSab'
+    elif(number < 1 or number > 7):
+        day = '\nEste número não corresponde a um dia da semana!'
+    print(day)
+
+def AskNumber():
+    n1 = int(input('Digite um número correspondente a uma dia da semana: '))
+    WeekDay(n1)
+    print('\nValor sem passar os paramêtros:')
+    WeekDay()
+    
+  
+AskNumber()
+
